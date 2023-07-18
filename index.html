@@ -1,0 +1,21 @@
+<html> 
+  <head>
+    <script type="application/javascript">
+      function setBackground() {
+        // document의 모든 p 태그를 구조분해할당으로 초기화하기
+        const [p1, p2, ...others] = document.getElementsByTagName("p");
+      
+        // 두번째 p 태그 배경색을 파란색으로 바꾸기
+        p2.style.background = "skyblue";
+      }
+    </script>
+  </head>
+  <body>
+    <input
+      type="button"
+      value="변경하기"
+      onclick="setBackground()" />
+    <p>hi</p>
+    <p>hello</p>
+  </body>
+</html>
